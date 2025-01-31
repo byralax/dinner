@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinner Date Proposal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sparkles" id="sparklesContainer"></div>
+    <div class="hearts" id="heartsContainer"></div>
+    <div class="plate" style="top:20%; left:10%"></div>
+    <div class="plate" style="bottom:20%; right:10%"></div>
+    
+    <div class="container">
+        <h1>Will You Be My Date to the Bucc Dinner? 🍷</h1>
+        <div class="invitation-text">
+            "An evening of good food a lot of random shi and great conversation awaits..."
+        </div>
+        <form id="proposalForm" action="https://formspree.io/f/xldgngbd" method="POST">
+            <div class="buttons">
+                <button type="button" onclick="handleResponse('Accepted')">Absolutely Yes! 🌹</button>
+                <button type="button" onclick="handleResponse('Declined')">Maybe Next Time 🌧️</button>
+            </div>
+            <input type="hidden" name="response" id="responseInput">
+        </form>
+        <div class="response-message" id="responseMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
